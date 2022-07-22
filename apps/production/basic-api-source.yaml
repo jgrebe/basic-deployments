@@ -2,11 +2,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
-  name: podinfo
+  name: basic-api
   namespace: applications
 spec:
-  interval: 30s
+  interval: 5m0s
+  url: https://github.com/jgrebe/basic-api
   ref:
-    branch: master
-  url: https://github.com/stefanprodan/podinfo
-
+    branch: main
